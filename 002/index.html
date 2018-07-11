@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+	<meta charset="utf-8">
+	<link href="../code/css/pro360.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../code/jslib/underscore.js "></script>
+	<script type="text/javascript" src="../code/jslib/konva.js "></script>
+	<script type="text/javascript" src="../code/jslib/TweenMax.min.js "></script>
+	<script type="text/javascript" src="../code/jslib/pre-loader.js"></script>
+	<!-- inject:js -->
+	<script src="../code/js/script.js"></script>
+	<!-- endinject -->
+
+	<!-- inject:cfg -->
+	<script src="../code/config.js"></script>
+	<!-- endinject -->
+	<style>
+	body {
+	    background-color: #efefef;
+	}
+
+	div.pro360 {
+	    height: 500px;
+	    width: 500px;
+	    margin-top: -250px;
+	    margin-left: -250px;
+	    top: 50%;
+	    position: absolute;
+	    border: 1px silver solid;
+	    left: 50%;
+	}
+	</style>
+
+</head>
+<html style="height:100%">
+	<body style="overflow:hidden;" onload="globalLoad()">
+		<div class="pro360"></div>
+	</body>
+	<script>
+	function globalLoad() {
+		//Config.item.file = "{-XXX}.jpg";
+		window.item = new PRO360(Config.item);
+	}	
+	</script>
+</html>
